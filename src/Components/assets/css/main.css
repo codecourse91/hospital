@@ -898,7 +898,7 @@
      left: 50%;
      transform: translate(-12px, -12px);
      line-height: 1.5626rem;
-     width: 25px
+     width: 25px;
  }
 
  .btn:not(.btn-icon) .now-ui-icons,
@@ -908,8 +908,9 @@
  }
 
  .btn-primary {
-     background-color: #f96332;
-     color: #fff
+     background-color: #f96332!important;
+     color: #fff!important;
+     border-color: #f96332!important;
  }
 
  .btn-primary:hover,
@@ -925,6 +926,7 @@
  .show>.btn-primary.dropdown-toggle:hover {
      background-color: #fa7a50;
      color: #fff;
+     border-color: #f96332;
      box-shadow: none
  }
 
@@ -1472,7 +1474,7 @@
  .btn-round {
      border-width: 1px;
      border-radius: 30px !important;
-     padding: 11px 23px
+     padding: 11px 23px;
  }
 
  .btn-round.btn-simple {
@@ -1609,7 +1611,7 @@
  .form-control {
      background-color: rgba(0, 0, 0, 0);
      border: 1px solid #E3E3E3;
-     border-radius: 30px;
+     border-radius: 30px!important;
      color: #2c2c2c;
      line-height: normal;
      font-size: .8571em;
@@ -1759,7 +1761,8 @@
 
  .form-group .form-control,
  .input-group .form-control {
-     padding: 10px 18px 10px 18px
+     padding: 10px 18px 10px 18px;
+     border-radius: 30px;
  }
 
  .form-group .form-control+.input-group-addon,
@@ -4553,9 +4556,12 @@
  .section-full-page .footer nav>ul a:not(.btn),
  .section-full-page .footer,
  .section-full-page .footer .copyright a {
-     color: #fff
+     color: #fff;
  }
-
+.copyright a{
+    color: #f96332;
+    text-decoration: none;
+}
  .authentication .card-plain {
      border-radius: .25rem;
      padding-bottom: .7rem;
@@ -6197,7 +6203,7 @@
      }
 
      .footer .copyright {
-         text-align: right
+         text-align: right;
      }
 
      .section-nucleo-icons .icons-container {
@@ -7074,7 +7080,7 @@
  .zmdi-hc-border {
      padding: .1em .25em;
      border: solid .1em #9e9e9e;
-     border-radius: 2px
+     border-radius: 2px;
  }
 
  .zmdi-hc-border-circle {
@@ -9219,7 +9225,8 @@
  }
 
  .zmdi-caret-up-circle:before {
-     content: '\f2f7'
+     content: '\f2f7';
+     color:#f96332;
  }
 
  .zmdi-caret-up:before {
@@ -14357,7 +14364,8 @@
  .our-team .team-box h4,
  .home-blog .blog-box .blog-cnt h5 a,
  .about-us-section .opening-hours h6 {
-     margin-bottom: 10px
+     margin-bottom: 10px;
+     text-decoration: none!important;
  }
 
  .m-l-15,
@@ -14884,7 +14892,8 @@
  .our-team .team-box,
  .contact-section .contact-form,
  .contact-section .contact-sidebar {
-     padding-left: 20px
+     padding-left: 20px;
+     text-decoration: none!important;
  }
 
  .p-t-20,
@@ -16388,7 +16397,8 @@
      font-size: 14px;
      position: relative;
      padding-right: 15px;
-     padding-left: 15px
+     padding-left: 15px;
+     text-decoration: none!important;
  }
 
  .main_header #top-nav .btn.btn-link i {
@@ -16633,7 +16643,9 @@
  .our-best-service .service-box .service-dep a {
      font-size: 13px;
      line-height: 24px;
-     font-weight: 400
+     font-weight: 400;
+     text-decoration: none;
+     color: #f96332;
  }
 
  .fun-fact {

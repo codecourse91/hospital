@@ -13,14 +13,14 @@ function Index()
           <div className="top">
             <div className="row">
             <div className="col-lg-6 col-md-7">
-                <div className="left">
+                <div className="start">
                   <ul className="list-unstyled m-b-0">
                     <li>
-                      <a href="#" className="btn btn-link" style={{textDecoration:'none'}}>
+                      <a href="#" className="btn btn-link">
                         <i className="zmdi zmdi-email m-r-5" />
                         info@example.com
                       </a>
-                      <a href="#" className="btn btn-link" style={{textDecoration:'none'}}>
+                      <a href="#" className="btn btn-link">
                         <i className="zmdi zmdi-phone m-r-5" />+ 202-555-0191
                       </a>
                     </li>
@@ -28,13 +28,13 @@ function Index()
                 </div>
               </div>
               <div className="col-lg-6 col-md-5">
-                <div className="text-right d-none d-md-block">
+                <div className="text-end d-none d-md-block">
                   <ul className="list-unstyled m-b-0">
                     <li>
-                      <a href="javascript:void(0);" className="btn btn-link" style={{textDecoration:'none'}}>
+                      <a href="login" className="btn btn-link">
                         Sign in
                       </a>{" "}
-                      <a href="javascript:void(0);" className="btn btn-link" style={{textDecoration:'none'}}>
+                      <a href="signup" className="btn btn-link">
                         sign up
                       </a>
                     </li>
@@ -50,14 +50,14 @@ function Index()
           <div className="head">
             <div className="row">
               <div className="col-lg-5 col-sm-5">
-                <div className="left">
+                <div className="start">
                   <a href="index.html" className="navbar-brand">
-                    <img src={require('./assets/images/logo.svg')} alt="logo" />
+                    <img src={logo} alt="logo" />
                   </a>
                 </div>
               </div>
               <div className="col-lg-7 col-sm-7">
-                <div className="text-right d-none d-md-block">
+                <div className="text-end d-none d-md-block">
                   <p className="col-white m-b-0 p-t-5">
                     <i className="zmdi zmdi-time" /> Mon - Sat: 9:00 - 18:00
                     Sunday CLOSED{" "}
@@ -86,7 +86,7 @@ function Index()
               <span className="navbar-toggler-icon" />
             </button>
             <div className="collapse navbar-collapse" id="navbarMenu">
-              <ul className="navbar-nav mr-auto">
+              <ul className="navbar-nav mr-auto col-lg-9">
                 <li className="nav-item">
                   <a className="nav-link" href="services">
                     Services
@@ -105,6 +105,7 @@ function Index()
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
+                    href=""
                     id="pageMenuLink"
                     data-toggle="dropdown"
                     aria-haspopup="true"
@@ -153,17 +154,17 @@ function Index()
                   </a>
                 </li>
                 <li className="nav-item d-md-none d-lg-none d-xl-none">
-                  <a className="nav-link" href="javascript:void(0);">
+                  <a className="nav-link" href="login">
                     Sign in
                   </a>
                 </li>
                 <li className="nav-item d-md-none d-lg-none d-xl-none">
-                  <a className="nav-link" href="javascript:void(0);">
+                  <a className="nav-link" href="signup">
                     Sign up
                   </a>
                 </li>
               </ul>
-              <form className="form-inline my-2 my-lg-0 d-none d-lg-inline-block">
+              <form className="form-inline my-2 my-lg-0 d-none d-lg-inline-block ms-2">
                 <input
                   className="form-control mr-sm-2"
                   type="search"
@@ -249,8 +250,8 @@ function Index()
                 <option>Laboratory</option>
               </select>
             </div>
-            <div className="col-lg-4 col-md-6">
-              <button className="btn btn-primary btn-round btn-block m-t-0 m-b-0">
+            <div className="col-lg-4 col-md-6 col-6">
+              <button className="btn btn-primary btn-round btn-block m-t-0 m-b-0 col-lg-12 col-md-6 col-6" >
                 Submit
               </button>
             </div>
@@ -346,7 +347,7 @@ function Index()
                       Contrary to popular belief, Lorem Ipsum is not simply
                       random text. It has roots in a piece[...]
                     </p>
-                    <a href="javascript:void(0);">View More</a>
+                    <a href="">View More</a>
                   </div>
                 </div>
               </div>
@@ -921,7 +922,7 @@ function Index()
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4">
-                  <button className="btn btn-primary btn-round btn-block margin-0">
+                  <button className="btn btn-primary btn-round btn-block margin-0 col-lg-12 col-md-4">
                     Submit
                   </button>
                 </div>
@@ -951,7 +952,7 @@ function Index()
                 <div className="col-6">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="about.html">About Us</a>
+                      <a href="about">About Us</a>
                     </li>
                     <li>
                       <a href="javascript:void(0);">Consultants</a>
@@ -1037,7 +1038,7 @@ function Index()
               </div>
             </div>
             <div className="col-lg-4 col-md-4">
-              <div className="social float-md-right">
+              <div className="social float-md-right text-end">
                 <a href="#">
                   <i className="zmdi zmdi-facebook m-r-10" />
                 </a>{" "}

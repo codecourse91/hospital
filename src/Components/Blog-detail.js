@@ -1,9 +1,9 @@
 import logo from './assets/images/logo.svg'
-function Blog()
+function Blogdetail()
 {
     return(
         <>
-  {/* Mirrored from thememakker.com/templates/oreo/hospital/front/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Feb 2023 05:42:36 GMT */}
+  {/* Mirrored from thememakker.com/templates/oreo/hospital/front/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Feb 2023 05:42:40 GMT */}
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
@@ -18,7 +18,6 @@ function Blog()
   <link rel="stylesheet" href="assets/css/main.css" />
   <div className="wrapper">
     {/* start loading */}
-   
     <div className="main_header">
       <section id="top-nav">
         <div className="container">
@@ -209,15 +208,11 @@ function Blog()
       {/* Blog */}
       <div className="container">
         <div className="row">
-          <div className="col-lg-8 col-md-12 left-box">
-            <div
-              className="card single_post"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-            >
+          <div className="col-lg-8 col-md-12">
+            <div className="card single_post">
               <div className="body">
                 <h3 className="m-t-0 m-b-5">
-                  <a href="blog-detail.html">
+                  <a href="https://www.thememakker.com/templates/oreo/hospital/front/blog-details.html">
                     All photographs are accurate. None of them is the truth
                   </a>
                 </h3>
@@ -231,7 +226,7 @@ function Blog()
                   <li>
                     <a href="javascript:void(0);">
                       <i className="zmdi zmdi-label col-red" />
-                      Traumatology
+                      Photography
                     </a>
                   </li>
                   <li>
@@ -244,310 +239,194 @@ function Blog()
               </div>
               <div className="body">
                 <div className="img-post m-b-15">
-                  <div
-                    id="carouselExampleControls"
-                    className="carousel slide"
-                    data-ride="carousel"
+                  <img
+                    src={require("./assets/images/blog/blog-page-1.jpg")}
+                    alt="Awesome Image"
+                  />
+                  <div className="social_share">
+                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
+                      <i className="zmdi zmdi-facebook" />
+                    </button>
+                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
+                      <i className="zmdi zmdi-twitter" />
+                    </button>
+                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
+                      <i className="zmdi zmdi-instagram" />
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal
+                </p>
+                <a
+                  href="https://www.thememakker.com/templates/oreo/hospital/front/blog-details.html"
+                  title="read more"
+                  className="btn btn-round btn-info"
+                >
+                  Read More
+                </a>
+              </div>
+            </div>
+            <div className="card">
+              <div className="header">
+                <h2>
+                  <strong>Comments</strong> 3
+                </h2>
+              </div>
+              <div className="body">
+                <ul className="comment-reply list-unstyled">
+                  <li
+                    className="row"
+                    data-aos="fade-left"
+                    data-aos-offset={100}
+                    data-aos-duration={2000}
                   >
-                    <div className="carousel-inner" role="listbox">
-                      <div className="carousel-item active">
-                        <img
-                          className="d-block img-fluid"
-                          src={require("./assets/images/blog/blog-page-1.jpg")}
-                          alt="First slide"
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          className="d-block img-fluid"
-                          src={require("./assets/images/blog/blog-page-2.jpg")}
-                          alt="Second slide"
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          className="d-block img-fluid"
-                          src={require("./assets/images/blog/blog-page-3.jpg")}
-                          alt="Third slide"
+                    <div className="icon-box col-md-2 col-4">
+                      <img
+                        className="img-fluid img-thumbnail"
+                        src={require("./assets/images/sm/avatar2.jpg")}
+                        alt="Awesome Image"
+                      />
+                    </div>
+                    <div className="text-box col-md-10 col-8 p-l-0">
+                      <h6>Gigi Hadid </h6>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text
+                      </p>
+                      <ul className="list-inline">
+                        <li>
+                          <a href="javascript:void(0);">Jan 09 2018</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">Reply</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    className="row"
+                    data-aos="fade-left"
+                    data-aos-offset={100}
+                    data-aos-duration={2000}
+                  >
+                    <div className="icon-box col-md-2 col-4">
+                      <img
+                        className="img-fluid img-thumbnail"
+                        src={require("./assets/images/sm/avatar3.jpg")}
+                        alt="Awesome Image"
+                      />
+                    </div>
+                    <div className="text-box col-md-10 col-8 p-l-0">
+                      <h6>Christian Louboutin</h6>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a
+                        galley of type and scramble
+                      </p>
+                      <ul className="list-inline">
+                        <li>
+                          <a href="javascript:void(0);">Jan 12 2018</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">Reply</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    className="row"
+                    data-aos="fade-left"
+                    data-aos-offset={100}
+                    data-aos-duration={2000}
+                  >
+                    <div className="icon-box col-md-2 col-4">
+                      <img
+                        className="img-fluid img-thumbnail"
+                        src={require("./assets/images/sm/avatar4.jpg")}
+                        alt="Awesome Image"
+                      />
+                    </div>
+                    <div className="text-box col-md-10 col-8 p-l-0">
+                      <h6>Kendall Jenner</h6>
+                      <p>
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour
+                      </p>
+                      <ul className="list-inline">
+                        <li>
+                          <a href="javascript:void(0);">Jan 20 2018</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">Reply</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              className="card"
+              data-aos="fade-up"
+              data-aos-offset={100}
+              data-aos-duration={2000}
+            >
+              <div className="header">
+                <h2>
+                  <strong>Leave</strong> a reply{" "}
+                  <small>
+                    Your email address will not be published. Required fields
+                    are marked*
+                  </small>
+                </h2>
+              </div>
+              <div className="body">
+                <div className="comment-form">
+                  <form className="row">
+                    <div className="col-sm-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Your Name"
                         />
                       </div>
                     </div>
-                    <a
-                      className="carousel-control-prev"
-                      href="#carouselExampleControls"
-                      role="button"
-                      data-slide="prev"
-                    >
-                      <span
-                        className="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      />
-                      <span className="sr-only">Previous</span>
-                    </a>
-                    <a
-                      className="carousel-control-next"
-                      href="#carouselExampleControls"
-                      role="button"
-                      data-slide="next"
-                    >
-                      <span
-                        className="carousel-control-next-icon"
-                        aria-hidden="true"
-                      />
-                      <span className="sr-only">Next</span>
-                    </a>
-                  </div>
-                  <div className="social_share">
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-facebook" />
-                    </button>
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-twitter" />
-                    </button>
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-instagram" />
-                    </button>
-                  </div>
+                    <div className="col-sm-6">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          placeholder="Email Address"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-sm-12">
+                      <div className="form-group">
+                        <textarea
+                          rows={4}
+                          className="form-control no-resize"
+                          placeholder="Please type what you want..."
+                          defaultValue={""}
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        className="btn btn btn-primary btn-round"
+                      >
+                        SUBMIT
+                      </button>
+                    </div>
+                  </form>
                 </div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal
-                </p>
-                <a
-                  href="blog-detail"
-                  title="read more"
-                  className="btn btn-round btn-info"
-                >
-                  Read More
-                </a>
               </div>
             </div>
-            <div
-              className="card single_post"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-            >
-              <div className="body">
-                <h3 className="m-t-0 m-b-5">
-                  <a href="blog-detail">
-                    Apple Introduces Search Ads Basic
-                  </a>
-                </h3>
-                <ul className="meta">
-                  <li>
-                    <a href="">
-                      <i className="zmdi zmdi-account col-blue" />
-                      Posted By: John Smith
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i className="zmdi zmdi-label col-amber" />
-                      Orthodontics
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);">
-                      <i className="zmdi zmdi-comment-text col-blue" />
-                      Comments: 3
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="body">
-                <div className="img-post m-b-15">
-                  <img
-                    src={require("./assets/images/blog/blog-page-2.jpg")}
-                    alt="Awesome Image"
-                  />
-                  <div className="social_share">
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-facebook" />
-                    </button>
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-twitter" />
-                    </button>
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-instagram" />
-                    </button>
-                  </div>
-                </div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal
-                </p>
-                <a
-                  href="blog-detail.html"
-                  title="read more"
-                  className="btn btn-round btn-info"
-                >
-                  Read More
-                </a>
-              </div>
-            </div>
-            <div
-              className="card single_post"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-            >
-              <div className="body">
-                <h3 className="m-t-0 m-b-5">
-                  <a href="blog-detail.html">
-                    WTCR from 2018: new rules, more cars, more races
-                  </a>
-                </h3>
-                <ul className="meta">
-                  <li>
-                    <a href="javascript:void(0);">
-                      <i className="zmdi zmdi-account col-blue" />
-                      Posted By: John Smith
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);">
-                      <i className="zmdi zmdi-label col-lime" />
-                      Traumatology
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);">
-                      <i className="zmdi zmdi-comment-text col-blue" />
-                      Comments: 18
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="body">
-                <div className="img-post m-b-15">
-                  <img
-                    src={require("./assets/images/blog/blog-page-3.jpg")}
-                    alt="Awesome Image"
-                  />
-                  <div className="social_share">
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-facebook" />
-                    </button>
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-twitter" />
-                    </button>
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-instagram" />
-                    </button>
-                  </div>
-                </div>
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old
-                </p>
-                <a
-                  href="blog-detail.html"
-                  title="read more"
-                  className="btn btn-round btn-info"
-                >
-                  Read More
-                </a>
-              </div>
-            </div>
-            <div
-              className="card single_post"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-            >
-              <div className="body">
-                <h3 className="m-t-0 m-b-5">
-                  <a href="blog-detail.html">
-                    CSS Timeline Examples from CodePen
-                  </a>
-                </h3>
-                <ul className="meta">
-                  <li>
-                    <a href="javascript:void(0);">
-                      <i className="zmdi zmdi-account col-blue" />
-                      Posted By: John Smith
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);">
-                      <i className="zmdi zmdi-label col-green" />
-                      Cardiology
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);">
-                      <i className="zmdi zmdi-comment-text col-blue" />
-                      Comments: 8
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="body">
-                <div className="img-post m-b-15">
-                  <img
-                    src={require("./assets/images/blog/blog-page-4.jpg")}
-                    alt="Awesome Image"
-                  />
-                  <div className="social_share">
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-facebook" />
-                    </button>
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-twitter" />
-                    </button>
-                    <button className="btn btn-primary btn-icon btn-icon-mini btn-round">
-                      <i className="zmdi zmdi-instagram" />
-                    </button>
-                  </div>
-                </div>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words
-                </p>
-                <a
-                  href="blog-detail.html"
-                  title="read more"
-                  className="btn btn-round btn-info"
-                >
-                  Read More
-                </a>
-              </div>
-            </div>
-            <ul
-              className="pagination pagination-primary"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-            >
-              <li className="page-item">
-                <a className="page-link" href="javascript:void(0);">
-                  Previous
-                </a>
-              </li>
-              <li className="page-item active">
-                <a className="page-link" href="javascript:void(0);">
-                  1
-                </a>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="javascript:void(0);">
-                  2
-                </a>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="javascript:void(0);">
-                  3
-                </a>
-              </li>
-              <li className="page-item">
-                <a className="page-link" href="javascript:void(0);">
-                  Next
-                </a>
-              </li>
-            </ul>
           </div>
           <div className="col-lg-4 col-md-12 right-box">
             <div className="card">
@@ -945,9 +824,9 @@ function Blog()
   </div>
   {/* start screpting */}
   {/* my js */}
-  {/* Mirrored from thememakker.com/templates/oreo/hospital/front/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Feb 2023 05:42:40 GMT */}
+  {/* Mirrored from thememakker.com/templates/oreo/hospital/front/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Feb 2023 05:42:42 GMT */}
 </>
 
     )
 }
-export default Blog;
+export default Blogdetail;
